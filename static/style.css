@@ -38,13 +38,17 @@ div#container {
 		justify-content: space-between;
 	}
 
-	.student-container .student img{
+	.student-container .student img {
 		width: 14rem;
 		height: 14rem;
-		border-radius: 7rem;
+		border-radius: 0; /* 改为方形 */
 		margin: 0.5rem;
 		border: #eee 0.5rem solid;
+		object-fit: cover; /* 保持内容覆盖而不拉伸 */
 	}
+	
+	
+	
 
 	@media screen and (max-width: 1200px) {
 		.student-container .student{
